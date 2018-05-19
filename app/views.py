@@ -83,6 +83,16 @@ def lista_candidatos(request):
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de candidatos',
-        })        
+        })
+ 
+def local_provas(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/local_provas.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'Listagem dos Locais das Provas',
+        })
     )
 
