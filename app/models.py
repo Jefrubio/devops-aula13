@@ -19,9 +19,9 @@ class Candidato(models.Model):
     CPF = models.CharField(max_length=11)
    
 class Local_Provas(models.Model):
-    nome_escola = models.CharField(max_length=500)
-    endereco = models.CharField(max_length=500)
-    cidade = models.CharField(max_length=500)
-    estado = models.CharField(max_length=50)
+    nome_escola = models.CharField(max_length=255)
+    endereco = models.CharField(max_length=255)
+    cidade = models.CharField(max_length=255)
+    estado = models.CharField(max_length=255)
     
 
