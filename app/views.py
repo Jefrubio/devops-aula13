@@ -84,6 +84,7 @@ def lista_candidatos(request):
         {
             'title':'Cadastro de candidatos',
         })
+    )
  
 def local_provas(request):
     assert isinstance(request, HttpRequest)
