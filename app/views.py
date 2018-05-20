@@ -74,6 +74,7 @@ def lista_vestibulares(request):
             'vestibulares': Vestibular.objects.all(),
             'year':datetime.now().year,
         })
+    )
         
 def lista_candidatos(request):
     assert isinstance(request, HttpRequest)
